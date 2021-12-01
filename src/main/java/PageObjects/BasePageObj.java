@@ -9,7 +9,7 @@ public class BasePageObj {
     private WebDriver driver=null;
     Config config=new Config();
     public void openCVLibJobPortal() throws IOException {
-          driver.get(config.loadProperties().getProperty("url"));
+        getDriver().get(config.loadProperties().getProperty("url"));
 
     }
   public WebDriver getDriver() throws IOException {
